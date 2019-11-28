@@ -1,8 +1,8 @@
 set encoding=utf-8
 scriptencoding utf-8
+
 set fileencoding=utf-8
 set fileencodings=utf-8
-
 
 " ------setting vim-plug--------
 call plug#begin('~/.vim/plugged')
@@ -14,17 +14,18 @@ Plug 'kazukazuinaina/Weather.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
+Plug 'lambdalisue/gina.vim'
 call plug#end()
 
 syntax enable
 filetype plugin indent on
 colorscheme gruvbox
+
 set background=light
 set number
 set nobackup
 set noswapfile
 set backspace=indent,eol,start
-
 
 " ------airline settings--------
 let g:airline#extensions#virtualenv#enabled = 1
