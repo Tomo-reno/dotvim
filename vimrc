@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'lambdalisue/gina.vim'
 call plug#end()
 
+" setting vim
 syntax enable
 filetype plugin indent on
 colorscheme gruvbox
@@ -26,8 +27,14 @@ set number
 set nobackup
 set noswapfile
 set backspace=indent,eol,start
+set hlsearch
+set incsearch
+
+" setting keybind
+nnoremap <ESC><ESC> :noh<CR>
 
 " ------airline settings--------
+set ttimeoutlen=10
 let g:airline#extensions#virtualenv#enabled = 1
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
